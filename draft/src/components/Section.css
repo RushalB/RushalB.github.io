@@ -1,0 +1,12 @@
+.section {
+    margin-bottom:5vh;
+  border: #ffffff 1px solid;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

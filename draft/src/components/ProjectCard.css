@@ -1,0 +1,203 @@
+.project-card {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background-size: 100%;
+    background-position: center 27%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 1px solid var(--gray-lighter);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Faabl-specific positioning - focus on bottom 80% */
+.project-card--faabl {
+    background-position: center 120%;
+}
+
+/* clickable wrapper */
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+/* hover/focus interaction (only transform on the card) */
+.project-card,
+.project-link .project-card {
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 300ms ease;
+    will-change: transform, box-shadow;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-link:hover .project-card,
+.project-link:focus .project-card {
+    transform: translateY(-6px);
+    border-color: var(--gray);
+    /* Sharp architectural shadow + simulated thicker border */
+    box-shadow: 8px 8px 0px rgba(26, 26, 26, 0.1), 0 0 0 1px var(--gray);
+}
+
+/* dimming overlay that sits above the background image but below content */
+.project-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Wave gradient overlay */
+
+
+/* reveal a CTA box on hover */
+.project-card__cta {
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    transform: translate(-50%, -60%);
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--black);
+    font-weight: 600;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 5;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.project-link:hover .project-card::after,
+.project-link:focus .project-card::after {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.project-link:hover .project-card__cta,
+.project-link:focus .project-card__cta {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* date pill */
+.project-card__date {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: var(--background-light);
+    font-size: 14px;
+    color: var(--text-medium);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    z-index: 2;
+}
+
+/* bottom info panel */
+.project-card__info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 22px 32px 24px;
+    background: linear-gradient(to bottom,
+            rgba(249, 249, 249, 0.95),
+            rgba(241, 245, 249, 0.86),
+            rgba(241, 245, 249, 0.8));
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 1;
+}
+
+.project-card__top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.project-card__title {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--black);
+}
+
+.project-card__role {
+    font-size: 18px;
+    color: var(--gray);
+    white-space: nowrap;
+}
+
+.project-card__labels-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.project-card__label {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--gray-lighter);
+    background: var(--background-light);
+    font-size: 13px;
+    color: var(--gray);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        height: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .project-card__info {
+        padding: 16px 20px 20px;
+    }
+
+    .project-card__title {
+        font-size: 22px;
+    }
+
+    .project-card__role {
+        font-size: 15px;
+    }
+
+    .project-card__labels-row {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        height: 350px;
+    }
+
+    .project-card__top-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .project-card__role {
+        margin-bottom: 8px;
+    }
+}
