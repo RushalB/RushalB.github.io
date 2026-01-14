@@ -1,0 +1,160 @@
+.section {
+  margin-top: 2%;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 2%;
+}
+
+.body {
+  
+  margin-top: 2vh;
+}
+
+.heading {
+  padding-left: 0;
+  font-family: Montserrat Alternates, sans-serif;
+  font-weight: 600;
+  font-size: 42;
+}
+
+.div-block {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  display: flex;
+}
+
+.div-block-2 {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.text-block {
+  text-align: center;
+  font-family: Montserrat Alternates, sans-serif;
+  font-size: 24px;
+  /* display: flex; */
+}
+
+.title-text-block {
+  color: #7D00FB;
+  margin: 5% auto 2% auto;
+  text-align: center;
+  font-family: Montserrat Alternates, sans-serif;
+  font-size: 40px;
+}
+
+.subtitle-text-block {
+
+  
+  margin: 2% auto 2% auto;
+  text-align: center;
+  color: #7D00FB;
+  font-family: Montserrat Alternates, sans-serif;
+  font-size: 30px;
+}
+
+.section-3 {
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  display: flex;
+}
+
+.equal_gap {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+/* 
+.main-image:hover {
+  background-color: #f0f000;
+} */
+
+.main-image {
+  display: block;
+  /* border: 1px solid rgb(0, 0, 0); */
+  margin: 5% 5%;
+  width: 100%;
+  height: 50%;
+}
+
+.contain {
+  /* border: 1px slateblue dotted; */
+  margin: auto 5%;
+
+}
+
+.text-block-3 {
+
+  font-family: Montserrat Alternates, sans-serif;
+  font-size: 18px;
+  margin: auto 15% 5% 15%;
+
+  line-height: 200%;
+}
+
+.text-block-4 {
+  color: #7D00FB;
+  font-family: Montserrat Alternates, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: auto 0% 5% 0%;
+  /* text-align: center; */
+  line-height: 200%;
+}
+.text-block-5 {
+
+  font-family: Montserrat Alternates, sans-serif;
+  font-size: 16px;
+  /* margin: auto 0% 5% 0%; */
+  line-height: 200%;
+}
+
+ .boxes-3 {
+  margin: auto 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
+  justify-items: center;
+  align-items: stretch;
+  justify-content: space-between;
+
+}
+
+.boxes-2 {
+  margin: auto  0%;
+  display: grid;
+  column-gap: 3rem;
+  grid-template-columns: 1fr 1fr ;
+  justify-items: center;
+  align-items: stretch;
+  justify-content: space-between;
+
+} 
+
+
+.grid-3-col-1 {
+  grid-column-start: 1;
+}
+.grid-3-col-2 {
+  grid-column-start: 2;
+}
+.grid-3-col-3 {
+  grid-column-start: 3;
+}
+.grid-3-col-4 {
+  grid-column-start: 4;
+}
+.grid-3-row-2 {
+  grid-row-start: 2;
+}
+.grid-3-row-1 {
+  grid-row-start: 1;
+}
+
