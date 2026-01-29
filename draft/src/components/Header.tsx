@@ -30,7 +30,7 @@ export default function Header({ name = "Rushal Butala" }: HeaderProps) {
           {name}
         </Link>
         <ul className="nav-list">
-          <li><u><a href="/Rushal_Butala_SWE_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></u></li>
+          <li><u><a href="/UX_Engineer.pdf" target="_blank" rel="noopener noreferrer">Resume</a></u></li>
         </ul>
       </nav>
     </header>
