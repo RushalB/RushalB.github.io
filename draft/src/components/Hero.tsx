@@ -316,7 +316,7 @@ export default function Hero() {
             </p>
             <div className="hero-actions">
               <a href="#work" className="btn btn-dark">View Projects</a>
-              <a href="#contact" className="btn btn-outline">Get in touch</a>
+              <a href="mailto:rushalbutala@gmail.com" className="btn btn-outline">Get in touch</a>
             </div>
           </div>
         </div>
