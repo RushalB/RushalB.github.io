@@ -31,9 +31,9 @@ export default function Header({ name = "Rushal Butala" }: HeaderProps) {
         </Link>
         <ul className="nav-list">
           <li><Link to="/">Home</Link></li>
-          <li><a href="/#work">Work</a></li>
-          <li><a href="/#contact">About me</a></li>
-          <li><u><a href="/#contact">Resume</a></u></li>
+          <li><Link to="/#work">Work</Link></li>
+          <li><Link to="/#contact">About me</Link></li>
+          <li><u><Link to="/#contact">Resume</Link></u></li>
         </ul>
       </nav>
     </header>

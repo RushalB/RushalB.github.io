@@ -5,16 +5,30 @@
     overflow: hidden;
     position: relative;
     background-size: 100%;
-    background-position: center 27%;
+    background-repeat: no-repeat;
+    background-position: center center;
     padding-left: 2rem;
     padding-right: 2rem;
     border: 1px solid var(--gray-lighter);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Project-specific positioning */
+.project-card--borough {
+    background-position: center center;
+}
+
+.project-card--reap-rewards {
+    background-position: center 27%;
+}
+
 /* Faabl-specific positioning - focus on bottom 80% */
 .project-card--faabl {
     background-position: center 120%;
+}
+
+.project-card--caretaker-app {
+    background-position: center 37%;
 }
 
 /* clickable wrapper */
