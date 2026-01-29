@@ -308,7 +308,7 @@ export default function Hero() {
             <div className="hero-tags">
               <span className="tag tag-dark">Product Designer</span>
               <span className="tag tag-light">UX/UI Specialist</span>
-              <span className="tag tag-light">Design Systems</span>
+              <span className="tag tag-light">Software Engineer</span>
             </div>
             <p className="hero-description">
               Creating thoughtful digital experiences through user research and innovative design solutions.

@@ -9,6 +9,7 @@ export default function CaretakerApp() {
         { id: 'design-system', label: 'Design System' },
         { id: 'ui-redesign', label: 'UI Redesign' },
         { id: 'user-flow', label: 'User Flow' },
+        { id: 'final-design', label: 'Final Design' },
         { id: 'future', label: 'Future Steps' },
     ];
 
@@ -21,6 +22,7 @@ export default function CaretakerApp() {
                 <p className="intro-subtitle">
                     A platform solving the problem of finding good caretakers online.
                     This project focuses on a complete visual overhaul and the creation of a comprehensive design system to improve the user experience.
+                    <br /><br /><strong>(This is an ongoing project)</strong>
                 </p>
             }
             sections={sections}
@@ -67,24 +69,14 @@ export default function CaretakerApp() {
                 <p>
                     One of the primary goals of this project is to establish a full design system. The previous interface relied on old, cluttered templates. I am building a library of reusable components, typography scales, and color palettes to ensure consistency and scalability across the application.
                 </p>
-                <p className="challenge-statement">
-                    "I want to showcase my design system skills through this case study."
-                </p>
+
                 {/* Placeholder for design system image */}
-                <div style={{
-                    width: '100%',
-                    height: '300px',
-                    backgroundColor: 'rgba(125, 67, 169, 0.05)',
-                    border: '2px dashed #7D43A9',
-                    borderRadius: '12px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: '#7D43A9',
-                    margin: '32px 0'
-                }}>
-                    Design System Preview (Placeholder)
-                </div>
+                <img
+                    src={`${import.meta.env.BASE_URL}caretaker-preview.png`}
+                    alt="Caretaker App Design System Preview"
+                    className="img"
+                    style={{ borderRadius: '12px', width: '100%', marginTop: '0px', border: '1px solid var(--gray-lighter)' }}
+                />
             </Section>
 
             {/* UI Redesign Section */}
@@ -100,6 +92,14 @@ export default function CaretakerApp() {
                 <h2>User Flow</h2>
                 <p>
                     While the client had an initial idea of the flow, my job is to flesh it out with all UX principles in mind. I am refining the user journey to ensure it is intuitive and efficient for both caretakers and those seeking care.
+                </p>
+            </Section>
+
+            {/* Final Design Section */}
+            <Section id="final-design">
+                <h2>Final Design</h2>
+                <p>
+                    As this is an ongoing project, the final designs are still being iterated upon. However, the core visual style and component library have been established to guide the development.
                 </p>
             </Section>
 

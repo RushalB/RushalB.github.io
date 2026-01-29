@@ -1,21 +1,14 @@
 import type { ProjectCardProps } from '../components/ProjectCard';
 import projectImage from '../assets/IPHONE 14 PRO DEEP PURPLE 7.png';
 import faablImage from '../assets/faabl.png';
+import boroughImage from '../assets/borough-feature.png';
+import caretakerImage from '../assets/caretaker-feature.png';
 
 /**
  * Project data for the portfolio
  * Add or modify projects here to update the portfolio page
  */
 export const projects: ProjectCardProps[] = [
-    {
-        title: "Borough",
-        role: "Founding Product Designer",
-        dateStart: "Jan 23",
-        dateEnd: "Dec 23",
-        labels: ["Civic Tech", "B2B/Client", "End-to-End"],
-        backgroundImage: projectImage,
-        link: "/borough"
-    },
     {
         title: "Reap Rewards",
         role: "UI Design",
@@ -35,12 +28,21 @@ export const projects: ProjectCardProps[] = [
         link: "/faabl"
     },
     {
+        title: "Borough",
+        role: "Founding Product Designer",
+        dateStart: "Jan 23",
+        dateEnd: "Dec 23",
+        labels: ["Civic Tech", "B2B/Client", "End-to-End", "Product Strategy"],
+        backgroundImage: boroughImage,
+        link: "/borough"
+    },
+    {
         title: "Caretaker App",
         role: "Main Designer",
         dateStart: "Current",
         dateEnd: "Ongoing",
         labels: ["Visual Design", "Design System", "UX"],
-        backgroundImage: projectImage,
+        backgroundImage: caretakerImage,
         link: "/caretaker-app"
     },
 ];

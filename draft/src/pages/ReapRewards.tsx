@@ -108,7 +108,7 @@ export default function CaseStudy() {
 
         <div className="quotes-container">
           <img
-            src="/interview-quotes.svg"
+            src={`${import.meta.env.BASE_URL}interview-quotes.svg`}
             alt="User Interview Quotes"
           />
         </div>
@@ -123,10 +123,10 @@ export default function CaseStudy() {
 
         <div className="reap-persona-grid">
           <div className="persona-visual">
-            <img src="/Tech Bro (1).png" alt="Nathan Sanders Illustration" />
+            <img src={`${import.meta.env.BASE_URL}Tech Bro (1).png`} alt="Nathan Sanders Illustration" />
           </div>
           <div className="persona-visual">
-            <img src="/Tech Bro.png" alt="James Allen Illustration" />
+            <img src={`${import.meta.env.BASE_URL}Tech Bro.png`} alt="James Allen Illustration" />
           </div>
         </div>
       </Section>
@@ -142,7 +142,7 @@ export default function CaseStudy() {
           them on a white board and connected the flow of the screens.
         </p>
         <img
-          src="/site-map.png"
+          src={`${import.meta.env.BASE_URL}site-map.png`}
           alt="Site Map"
           className="img blend-multiply"
         />
@@ -155,7 +155,7 @@ export default function CaseStudy() {
           tester focuses on the features and not the aesthetics.
         </p>
         <img
-          src="/user-flow.png"
+          src={`${import.meta.env.BASE_URL}user-flow.png`}
           alt="User Flow"
           className="img blend-multiply"
         />
@@ -169,7 +169,7 @@ export default function CaseStudy() {
         </p>
 
         <img
-          src="/wireframes.png"
+          src={`${import.meta.env.BASE_URL}wireframes.png`}
           alt="Wireframes Iteration v1"
           className="img blend-multiply"
           style={{ borderRadius: '0px', marginTop: '32px' }}
@@ -194,12 +194,12 @@ export default function CaseStudy() {
               <div className="heuristic-column">
                 <h4>Violation for Frame 2</h4>
                 <p>Previous design is very rigid meaning it has only one way to add a credit card. Users might experience fatigue filling in that information.</p>
-                <img src="https://via.placeholder.com/300x500/e0e0e0/333333?text=Violation:+Rigid+Input" alt="Violation: Rigid Input" className="heuristic-img" />
+                <img src={`${import.meta.env.BASE_URL}reap-violation-2-new.png`} alt="Violation: Rigid Input" className="heuristic-img" />
               </div>
               <div className="heuristic-column">
                 <h4>Design Change</h4>
                 <p>I added a "Scan your card", so that users do not have to type all the information and get a much faster experience. The user is then directly redirected to the confirm card page where he can make edits if necessary.</p>
-                <img src="https://via.placeholder.com/300x500/e0e0e0/333333?text=Change:+Scan+Card" alt="Change: Scan Card" className="heuristic-img" />
+                <img src={`${import.meta.env.BASE_URL}reap-violation-1.png`} alt="Change: Scan Card" className="heuristic-img" />
               </div>
             </div>
           </div>
@@ -211,49 +211,17 @@ export default function CaseStudy() {
               <div className="heuristic-column">
                 <h4>Violation for Frame 2,3,4</h4>
                 <p>Previous design did not provide feedback for the user on which step of the process they were. Users should always know about the status of the process they are completing.</p>
-                <img src="https://via.placeholder.com/300x500/e0e0e0/333333?text=Violation:+No+Status" alt="Violation: No Status" className="heuristic-img" />
+                <img src={`${import.meta.env.BASE_URL}reap-violation-status.png`} alt="Violation: No Status" className="heuristic-img" />
               </div>
               <div className="heuristic-column">
                 <h4>Design Change</h4>
                 <p>I added <em>Step 1/4....Step 2/4.....Step 3/4....Step 4/4</em> so that the user is aware of how many steps are remaining.</p>
-                <img src="https://via.placeholder.com/300x500/e0e0e0/333333?text=Change:+Step+Indicator" alt="Change: Step Indicator" className="heuristic-img" />
+                <img src={`${import.meta.env.BASE_URL}reap-design-change-status.png`} alt="Change: Step Indicator" className="heuristic-img" />
               </div>
             </div>
           </div>
 
-          {/* 3. User Control and Freedom */}
-          <div className="heuristic-item">
-            <h3>Heuristic: User Control and Freedom</h3>
-            <div className="heuristic-grid">
-              <div className="heuristic-column">
-                <h4>Violation for Frames 2,3 and 4</h4>
-                <p>Previous design did not provide a way for the user to exit the process of adding a new credit card when they wanted. It sort of forced the user to continue until the task was done.</p>
-                <img src="https://via.placeholder.com/300x500/e0e0e0/333333?text=Violation:+No+Exit" alt="Violation: No Exit" className="heuristic-img" />
-              </div>
-              <div className="heuristic-column">
-                <h4>Design Change</h4>
-                <p>I added a <strong>cancel</strong> button on every stage so that the user can exit any time they want to. This makes them feel in charge and on control of what they are doing.</p>
-                <img src="https://via.placeholder.com/300x500/e0e0e0/333333?text=Change:+Cancel+Button" alt="Change: Cancel Button" className="heuristic-img" />
-              </div>
-            </div>
-          </div>
 
-          {/* 4. Help and documentation */}
-          <div className="heuristic-item">
-            <h3>Heuristic: Help and documentation</h3>
-            <div className="heuristic-grid">
-              <div className="heuristic-column">
-                <h4>Violation for all frames</h4>
-                <p>Previous design did not provide a way for the user to get help if they were stuck on some part of the app or wanted some information about how a certain process work, or what happens to their data. The user should always know about all these things and they should not be buried deep in the app but rather be accessible.</p>
-                <img src="https://via.placeholder.com/300x500/e0e0e0/333333?text=Violation:+No+Help" alt="Violation: No Help" className="heuristic-img" />
-              </div>
-              <div className="heuristic-column">
-                <h4>Design Change</h4>
-                <p>I added an extra help tab in the bottom navigation that redirects to a help page where user can find all necessary information and contact the app owners if necessary.</p>
-                <img src="https://via.placeholder.com/300x500/e0e0e0/333333?text=Change:+Help+Tab" alt="Change: Help Tab" className="heuristic-img" />
-              </div>
-            </div>
-          </div>
 
           {/* 5. Consistency and Standards */}
           <div className="heuristic-item">
@@ -262,12 +230,12 @@ export default function CaseStudy() {
               <div className="heuristic-column">
                 <h4>Violation for all frames</h4>
                 <p>Previous design used a hamburger menu for content navigation. This type of menu is not generally used in mobile applications. It is also very inconvenient to open the side menu all the time to move around in the app.</p>
-                <img src="https://via.placeholder.com/300x500/e0e0e0/333333?text=Violation:+Hamburger" alt="Violation: Hamburger Menu" className="heuristic-img" />
+                <img src={`${import.meta.env.BASE_URL}reap-violation-consistency.png`} alt="Violation: Hamburger Menu" className="heuristic-img" />
               </div>
               <div className="heuristic-column">
                 <h4>Design Change</h4>
                 <p>I added a bottom navigation bar for moving around the app. This is used across the board in almost all apps. Having this type of navigation invokes a sense of familiarity for the user and they automatically know what the buttons or tabs on there do.</p>
-                <img src="https://via.placeholder.com/300x500/e0e0e0/333333?text=Change:+Bottom+Nav" alt="Change: Bottom Nav" className="heuristic-img" />
+                <img src={`${import.meta.env.BASE_URL}reap-design-change-consistency.png`} alt="Change: Bottom Nav" className="heuristic-img" />
               </div>
             </div>
           </div>
@@ -318,55 +286,14 @@ export default function CaseStudy() {
       {/* Final Designs / Key Features */}
       <Section id="final-designs">
         <h2>Final Designs</h2>
-        <p>
-          The final high-fidelity designs focus on clarity, ease of use, and maximizing financial benefits.
-          Here are the key features that define the Reap Rewards experience.
-        </p>
-
-        <div className="features-scroll-container">
-          {/* Feature 1 */}
-          <div className="feature-card">
-            <div className="feature-image">
-              <img src="https://via.placeholder.com/375x812/559EEE/ffffff?text=Home+Screen" alt="Home Screen Dashboard" />
-            </div>
-            <div className="feature-content">
-              <h4>Smart Dashboard</h4>
-              <p>A centralized hub showing your total rewards, recent savings, and personalized recommendations at a glance.</p>
-            </div>
-          </div>
-
-          {/* Feature 2 */}
-          <div className="feature-card">
-            <div className="feature-image">
-              <img src="https://via.placeholder.com/375x812/559EEE/ffffff?text=Card+Scanner" alt="Card Scanner Feature" />
-            </div>
-            <div className="feature-content">
-              <h4>Instant Card Scan</h4>
-              <p>Effortlessly add new cards by scanning them. No manual entry required, reducing friction and errors.</p>
-            </div>
-          </div>
-
-          {/* Feature 3 */}
-          <div className="feature-card">
-            <div className="feature-image">
-              <img src="https://via.placeholder.com/375x812/559EEE/ffffff?text=Reward+Tracker" alt="Reward Tracker" />
-            </div>
-            <div className="feature-content">
-              <h4>Reward Tracker</h4>
-              <p>Visualize your progress towards specific goals. See exactly how close you are to your next redemption.</p>
-            </div>
-          </div>
-
-          {/* Feature 4 */}
-          <div className="feature-card">
-            <div className="feature-image">
-              <img src="https://via.placeholder.com/375x812/559EEE/ffffff?text=Merchant+Map" alt="Merchant Map" />
-            </div>
-            <div className="feature-content">
-              <h4>Merchant Map</h4>
-              <p>Discover nearby merchants offering the highest cash back rates for your specific card portfolio.</p>
-            </div>
-          </div>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '32px', width: '100%' }}>
+          <iframe
+            style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
+            width="800"
+            height="450"
+            src="https://embed.figma.com/design/ke6b48FmUy1t2VhlJXzb5z/Untitled?node-id=0-1&embed-host=share"
+            allowFullScreen
+          ></iframe>
         </div>
       </Section>
     </CaseStudyLayout >
