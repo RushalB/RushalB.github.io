@@ -1,7 +1,7 @@
 import Section from '../components/Section';
 import CaseStudyLayout from '../components/CaseStudyLayout';
 import './Borough.css';
-import { Users, Layout, Shield, Code2, Database, BrainCircuit, Rocket, LineChart, Map } from 'lucide-react';
+import { Users, Layout, Shield, Code2, Database, BrainCircuit, Rocket, LineChart } from 'lucide-react';
 
 export default function Borough() {
     const sections = [
